@@ -66,8 +66,48 @@ function twoPoints() {
   return { leftPoint, rightPoint };
 }
 
+function target() {
+  const position = {
+    x: 400,
+    y: 300,
+  };
+
+  const largeCircle = {
+    radious: 150,
+    color: {
+      r: 255,
+      g: 0,
+      b: 0,
+      a: 255,
+    },
+  };
+
+  const mediumCircle = {
+    radious: 100,
+    color: {
+      r: 0,
+      g: 0,
+      b: 255,
+      a: 127,
+    },
+  };
+
+  const smallCircle = {
+    radious: 50,
+    color: {
+      r: 255,
+      g: 0,
+      b: 0,
+      a: 255,
+    },
+  };
+
+  return { position, largeCircle, mediumCircle, smallCircle };
+}
+
 module.exports = {
   coloredWindow,
   button,
   twoPoints,
+  target,
 };

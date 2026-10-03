@@ -50,12 +50,19 @@ function draw() {
   //   );
 
   // Exercise 3
-  const p = e.twoPoints();
+  //   const p = e.twoPoints();
 
-  r.DrawCircleV(p.leftPoint, 100, r.BLUE);
-  r.DrawCircleV(p.rightPoint, 50, r.RED);
+  //   r.DrawCircleV(p.leftPoint, 100, r.BLUE);
+  //   r.DrawCircleV(p.rightPoint, 50, r.RED);
 
-  r.DrawLineV(p.leftPoint, p.rightPoint, r.WHITE);
+  //   r.DrawLineV(p.leftPoint, p.rightPoint, r.WHITE);
+
+  // Exercise 4
+  const t = e.target();
+
+  r.DrawCircleV(t.position, t.largeCircle.radious, t.largeCircle.color);
+  r.DrawCircleV(t.position, t.mediumCircle.radious, t.mediumCircle.color);
+  r.DrawCircleV(t.position, t.smallCircle.radious, t.smallCircle.color);
 
   r.EndDrawing();
 }
