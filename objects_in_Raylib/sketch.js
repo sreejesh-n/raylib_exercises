@@ -32,22 +32,30 @@ function draw() {
   //   );
 
   // Exercise 2
-  const button = e.button();
+  //   const button = e.button();
 
-  r.DrawRectangleRounded(
-    button.rec,
-    button.roundness,
-    button.segments,
-    button.color,
-  );
+  //   r.DrawRectangleRounded(
+  //     button.rec,
+  //     button.roundness,
+  //     button.segments,
+  //     button.color,
+  //   );
 
-  r.DrawRectangleRoundedLines(
-    button.rec,
-    button.roundness,
-    button.segments,
-    button.lineThick,
-    button.lineColor,
-  );
+  //   r.DrawRectangleRoundedLines(
+  //     button.rec,
+  //     button.roundness,
+  //     button.segments,
+  //     button.lineThick,
+  //     button.lineColor,
+  //   );
+
+  // Exercise 3
+  const p = e.twoPoints();
+
+  r.DrawCircleV(p.leftPoint, 100, r.BLUE);
+  r.DrawCircleV(p.rightPoint, 50, r.RED);
+
+  r.DrawLineV(p.leftPoint, p.rightPoint, r.WHITE);
 
   r.EndDrawing();
 }

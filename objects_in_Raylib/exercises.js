@@ -52,7 +52,22 @@ function button() {
   return { rec, roundness, segments, lineThick, color, lineColor };
 }
 
+function twoPoints() {
+  const leftPoint = {
+    x: 100,
+    y: 200,
+  };
+
+  const rightPoint = {
+    x: 300,
+    y: 200,
+  };
+
+  return { leftPoint, rightPoint };
+}
+
 module.exports = {
   coloredWindow,
   button,
+  twoPoints,
 };
