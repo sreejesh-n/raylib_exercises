@@ -105,9 +105,28 @@ function target() {
   return { position, largeCircle, mediumCircle, smallCircle };
 }
 
+function ball() {
+  const position = {
+    x: 300,
+    y: 300,
+  };
+
+  const size = 120;
+
+  const color = {
+    r: 255,
+    g: 0,
+    b: 0,
+    a: 255,
+  };
+
+  return { position, size, color };
+}
+
 module.exports = {
   coloredWindow,
   button,
   twoPoints,
   target,
+  ball,
 };

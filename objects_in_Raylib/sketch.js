@@ -58,11 +58,16 @@ function draw() {
   //   r.DrawLineV(p.leftPoint, p.rightPoint, r.WHITE);
 
   // Exercise 4
-  const t = e.target();
+  //   const t = e.target();
 
-  r.DrawCircleV(t.position, t.largeCircle.radious, t.largeCircle.color);
-  r.DrawCircleV(t.position, t.mediumCircle.radious, t.mediumCircle.color);
-  r.DrawCircleV(t.position, t.smallCircle.radious, t.smallCircle.color);
+  //   r.DrawCircleV(t.position, t.largeCircle.radious, t.largeCircle.color);
+  //   r.DrawCircleV(t.position, t.mediumCircle.radious, t.mediumCircle.color);
+  //   r.DrawCircleV(t.position, t.smallCircle.radious, t.smallCircle.color);
+
+  //Exercise 5
+  const ball = e.ball();
+
+  r.DrawCircleV(ball.position, ball.size, ball.color);
 
   r.EndDrawing();
 }
