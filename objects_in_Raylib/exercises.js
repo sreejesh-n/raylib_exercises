@@ -13,9 +13,46 @@ function coloredWindow() {
     a: 150,
   };
 
-  return { rec, color };
+  const lineColor = {
+    r: 255,
+    g: 255,
+    b: 255,
+    a: 255,
+  };
+
+  return { rec, color, lineColor };
+}
+
+function button() {
+  const rec = {
+    x: 200,
+    y: 300,
+    width: 180,
+    height: 60,
+  };
+
+  const roundness = 1;
+  const segments = 7;
+  const lineThick = 5;
+
+  const color = {
+    r: 130,
+    g: 219,
+    b: 188,
+    a: 255,
+  };
+
+  const lineColor = {
+    r: 255,
+    g: 255,
+    b: 255,
+    a: 255,
+  };
+
+  return { rec, roundness, segments, lineThick, color, lineColor };
 }
 
 module.exports = {
   coloredWindow,
+  button,
 };

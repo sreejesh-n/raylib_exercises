@@ -19,14 +19,34 @@ function draw() {
   r.BeginDrawing();
   r.ClearBackground(r.BLACK);
 
-  const window = e.coloredWindow();
-  r.DrawRectangleRec(window.rec, window.color);
-  r.DrawRectangleLines(
-    window.rec.x,
-    window.rec.y,
-    window.rec.width,
-    window.rec.height,
-    r.WHITE,
+  // Exercise 1
+  //   const window = e.coloredWindow();
+
+  //   r.DrawRectangleRec(window.rec, window.color);
+  //   r.DrawRectangleLines(
+  //     window.rec.x,
+  //     window.rec.y,
+  //     window.rec.width,
+  //     window.rec.height,
+  //     window.lineColor,
+  //   );
+
+  // Exercise 2
+  const button = e.button();
+
+  r.DrawRectangleRounded(
+    button.rec,
+    button.roundness,
+    button.segments,
+    button.color,
+  );
+
+  r.DrawRectangleRoundedLines(
+    button.rec,
+    button.roundness,
+    button.segments,
+    button.lineThick,
+    button.lineColor,
   );
 
   r.EndDrawing();
