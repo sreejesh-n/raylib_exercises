@@ -54,13 +54,13 @@ function button() {
 
 function twoPoints() {
   const leftPoint = {
-    x: 100,
+    x: 150,
     y: 200,
   };
 
   const rightPoint = {
-    x: 300,
-    y: 200,
+    x: 500,
+    y: 400,
   };
 
   return { leftPoint, rightPoint };
